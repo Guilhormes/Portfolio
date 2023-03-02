@@ -2,16 +2,49 @@ header{
     width: 100%;
     height: 100vh;
     background-image: url(/assets/images/fundo.png);
-
-}
-
-nav{
-    height: 92px;
-    justify-content: space-between;
-    background: #121212;
-
 }
 
 .logo{
+    font-size: 24px;
     text-transform: uppercase;
+    letter-spacing: 4px;
+    
+}
+
+
+nav{
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #121212;
+}
+
+.nav-ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav-ul li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+a{
+    display: inline-block;
+    transition: background 4s;
+}
+
+hr{
+    border: solid 1px #fff;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition:  0.4s;
+}
+
+li:hover hr{
+    transform-origin: left;
+    transform: scaleX(1);
+    opacity: 1;
+
 }
