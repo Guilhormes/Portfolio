@@ -4,3 +4,14 @@ header{
     background-image: url(/assets/images/fundo.png);
 
 }
+
+nav{
+    height: 92px;
+    justify-content: space-between;
+    background: #121212;
+
+}
+
+.logo{
+    text-transform: uppercase;
+}
