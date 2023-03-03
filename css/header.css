@@ -20,31 +20,42 @@ nav{
     background: #121212;
 }
 
-.nav-ul{
+
+.nav-ul{           
+    gap: 32px;                
     list-style: none;
     display: flex;
 }
 
-.nav-ul li{
+.nav-ul li {
+    display: inline-block;
+    position: relative;
     letter-spacing: 3px;
-    margin-left: 32px;
-}
-
+    color: #fff;
+  }
+  
+  .nav-ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .nav-ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+   
+  
 a{
     display: inline-block;
     transition: background 4s;
 }
 
-hr{
-    border: solid 1px #fff;
-    transform-origin: left;
-    transform: scaleX(0);
-    transition:  0.4s;
-}
-
-li:hover hr{
-    transform-origin: left;
-    transform: scaleX(1);
-    opacity: 1;
-
-}
+ 
