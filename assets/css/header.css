@@ -1,19 +1,19 @@
+.logo {
+    max-width: 37vh; 
+    height: auto;
+}
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: #333;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    height: 13vh;
+    z-index: 100;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.navbar p {
-    font-size: 24px;
-    font-weight: bold;
 }
 
 .navbar ul {
@@ -37,7 +37,6 @@
 
 
 .navbar li:hover {
-    transform: translateY(-5px);
-    opacity: 0.8;
+    transform: translateY(-4px);
 }
 
